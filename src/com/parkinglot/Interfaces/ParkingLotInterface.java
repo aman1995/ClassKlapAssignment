@@ -1,12 +1,12 @@
 package com.parkinglot.Interfaces;
 
+import com.parkinglot.Model.Ticket;
+
 public interface ParkingLotInterface {
 
     public String park(Vehicle vehicle);
-    public String unPark(String slotNumber);
-    public String getStatus();
-    public String getRegistrationsByColor(String color);
-    public String getSlotsByColor(String color);
-    public String getSlotByRegNumber(String registrationNumber);
+    public Ticket unPark(String slotNumber);
+
+
 }
 

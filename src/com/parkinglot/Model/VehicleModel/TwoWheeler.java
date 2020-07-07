@@ -1,27 +1,17 @@
-package com.parkinglot.Model;
+package com.parkinglot.Model.VehicleModel;
 
 import com.parkinglot.Interfaces.Vehicle;
 
-public class Car implements Vehicle {
-
+public class TwoWheeler implements Vehicle {
     private String registrationNumber;
-    private String color;
 
-    public Car(String registrationNumber, String color) {
+    public TwoWheeler(String registrationNumber) {
         super();
         this.registrationNumber = registrationNumber;
-        this.color = color;
     }
 
     @Override
     public String getRegistartionNumber() {
         return this.registrationNumber;
     }
-
-    @Override
-    public String getColor() {
-
-        return this.color;
-    }
 }
-

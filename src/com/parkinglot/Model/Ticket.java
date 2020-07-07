@@ -2,31 +2,37 @@ package com.parkinglot.Model;
 
 import com.parkinglot.Interfaces.Vehicle;
 
+import java.time.LocalTime;
+
 public class Ticket {
-    private Integer slot;
-    private Vehicle vehicle;
-
-    public Ticket(Integer slot, Vehicle vehicle) {
-        super();
-        this.slot = slot;
-        this.vehicle = vehicle;
+    private LocalTime entryTime;
+    private LocalTime departureTime;
+    private int totalPrice;
+    public Ticket(LocalTime entryTime) {
+        this.entryTime = entryTime;
     }
 
-    public Integer getSlot() {
-        return slot;
+    public LocalTime getEntryTime() {
+        return entryTime;
     }
 
-    public void setSlot(Integer slot) {
-        this.slot = slot;
+    public void setEntryTime(LocalTime entryTime) {
+        this.entryTime = entryTime;
     }
 
-    public Vehicle getVehicle() {
-        return vehicle;
+    public LocalTime getDepartureTime() {
+        return departureTime;
     }
 
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
+    public void setDepartureTime(LocalTime departureTime) {
+        this.departureTime = departureTime;
     }
 
+    public int getTotalPrice() {
+        return totalPrice;
+    }
 
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
 }
